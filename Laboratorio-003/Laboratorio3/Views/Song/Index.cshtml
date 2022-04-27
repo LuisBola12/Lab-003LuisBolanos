@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model SongsModel;
+@{
+    ViewData["Title"] = "Favorite Song";
+}
+<h1>@ViewBag.MainTitle</h1>
+<div>
+    <label class="p-7" style="width:200px;height:40px;font-size=18px;font-weight:bold">Song Name: </label>
+    <label style="width:600px;height:30px;border:black;border-width:1px;border-style:solid;font-size=18px"> @Model.FavSong</label>
+</div>
+<div>
+    <label class="p-7" style="width:200px;height:40px;font-size=18px;font-weight:bold">Artist: </label>
+    <label style="width:600px;height:30px;border:black;border-width:1px;border-style:solid;font-size=18px"> @Model.Artist</label>
+</div>
+<div>
+    <label class="p-7" style="width:200px;height:40px;font-size=18px;font-weight:bold">Album: </label>
+    <label style="width:600px;height:30px;border:black;border-width:1px;border-style:solid;font-size=18px"> @Model.Album</label>
+</div>
+<div>
+    <label class="p-7" style="width:200px;height:40px;font-size=18px;font-weight:bold">Genre: </label>
+    <label style="width:600px;height:30px;border:black;border-width:1px;border-style:solid;font-size=18px"> @Model.Genre</label>
+</div>
+<div>
+    <label class="p-7" style="width:200px;height:40px;font-size=18px;font-weight:bold">Released Date: </label>
+    <label style="width:600px;height:30px;border:black;border-width:1px;border-style:solid;font-size=18px"> @Model.ReleasedDate</label>
+</div>
+<div>
+    <label class="p-7" style="width:200px;height:40px;font-size=18px;font-weight:bold">Youtube Link: </label>
+    <label style="width:600px;height:30px;border:black;border-width:1px;border-style:solid;font-size=18px"> @Model.YTLink</label>
+</div>
